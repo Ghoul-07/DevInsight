@@ -1,8 +1,10 @@
 const express = require("express")
-const compareController = require('../controllers/compare.controller')
+const githubController = require('../controllers/github.controller')
+const leetcodeController = require('../controllers/leetcode.controller')
 
 const router = express.Router()
 
-router.post('/', compareController.createCompareController)
+router.post('/github', githubController.githubCompareController)
+router.post('/leetcode', leetcodeController.leetcodeCompareController)
 
 module.exports = router

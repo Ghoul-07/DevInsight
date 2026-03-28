@@ -14,12 +14,5 @@ app.use(cors())
 app.use('/api/analyze', analyzeRoutes)
 app.use('/api/compare', compareRoutes)
 
-app.post("/post/", (req, res)=>{
-    const data = req.body
-    res.status(201).json({
-        message:"successfully fetched",
-        data: data
-    })
-})
 
 module.exports = app

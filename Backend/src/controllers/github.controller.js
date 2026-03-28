@@ -1,6 +1,7 @@
-const axios = require("axios")
+const axios = require("axios");
+const { response } = require("../app");
 
-async function createCompareController(req, res){
+async function githubCompareController(req, res){
     const {usernames} = req.body
 
     if(!usernames || usernames.length === 0){
@@ -90,5 +91,5 @@ function calculateScore(user){
 }
 
 module.exports = {
-    createCompareController
+    githubCompareController
 }
