@@ -187,8 +187,16 @@ function CombinedPage() {
                   <div>
                     <div>{user.name}</div>
                     <div style={{ fontSize: "11px", color: "#666", marginTop: "2px", display: "flex", gap: "6px" }}>
-                      {user.githubUsername   && <span>GH: {user.githubUsername}</span>}
-                      {user.leetcodeUsername && <span>LC: {user.leetcodeUsername}</span>}
+                      {user.githubUsername && (
+                            <a href={`https://github.com/${user.githubUsername}`} target="_blank" rel="noreferrer" style={{ color: "#888" }}>
+                            GH ↗
+                            </a>
+                        )}
+                        {user.leetcodeUsername && (
+                            <a href={`https://leetcode.com/${user.leetcodeUsername}`} target="_blank" rel="noreferrer" style={{ color: "#888" }}>
+                            LC ↗
+                            </a>
+                        )}
                     </div>
                     {/* Flags */}
                     {user.missingLC && <span style={{ fontSize: "10px", color: "#f87171" }}>LC not found</span>}

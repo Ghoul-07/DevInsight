@@ -87,7 +87,9 @@ function GitHubPage(){
                   alt="avatar"
                   className="avatar"
                 />
-                {user.username}
+                <a href={`https://github.com/${user.username}`} target="_blank" rel="noreferrer">
+                  {user.username}
+                </a>
               </td>
 
               <td>{user.score}</td>

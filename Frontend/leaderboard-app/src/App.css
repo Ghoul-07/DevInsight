@@ -48,6 +48,14 @@ body {
       gap: 10px;
     }
 
+    .user-cell a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .user-cell a:hover {
+      text-decoration: underline;
+    }
     .input-box{
       padding : 12px;
       margin-right: 15px;
