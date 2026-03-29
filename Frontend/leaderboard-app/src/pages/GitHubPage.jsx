@@ -23,7 +23,7 @@ function GitHubPage() {
       const usernames = input.split(",").map((u) => u.trim()).filter((u) => u.length > 0);
 
       setLoading(true);
-      const res = await fetch("http://localhost:3000/api/compare/github", {
+      const res = await fetch("https://github-profile-analyzer-nla9.onrender.com/api/compare/github", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ usernames }),

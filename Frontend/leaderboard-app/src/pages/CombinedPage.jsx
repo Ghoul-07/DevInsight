@@ -45,7 +45,7 @@ function CombinedPage() {
     setError("");
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:3000/api/compare/combined", {
+      const res = await fetch("https://github-profile-analyzer-nla9.onrender.com/api/compare/combined", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
