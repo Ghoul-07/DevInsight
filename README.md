@@ -94,7 +94,7 @@ npm run dev
 ## Project Structure
 
 ```
-Github-profile-analyzer/
+DevInsight/
 ├── Backend/
 │   ├── src/
 │   │   ├── controllers/
